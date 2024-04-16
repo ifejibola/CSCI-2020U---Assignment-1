@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Spam Detector</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+<header>
+  <h3><strong>Spam Detector Dashboard</strong></h3>
+</header>
+<div class="sidebar">
+  <a href="index.html">Dashboard</a>
+  <a href="about.html">About</a>
+</div>
+
+<div class = "main-content">
+  <div id = "dashboard" class ="main-content-item active">
+    <h3>Spam Analysis Dashboard</h3>
+    <p>The table below displays the results of our spam detection algorithm: </p>
+    <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Spam Probability (%)</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      <!-- Add your table data here -->
+      </tbody>
+    </table>
+      </div>
+  </div>
+
+
+  <div id = "about" class = "main-content-item" >
+    <a href="about.html">About Us</a>
+  </div>
+</div>
+
+<div class="right-sidebar">
+  <p>Performance Of The Model</p>
+  <p>Accuracy:</p>
+  <label type="text" placeholder=" " id="accLabel"></label>
+  <p>Precision:</p>
+  <label type="text" placeholder="" id="precesionLabel"></label>
+</div>
+
+<div class="clear"></div>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+<footer>
+  <p> Copyright &copy; CSCI 2020U - Winter 2024 </p>
+</footer>
+
+</body>
+
+</html>
